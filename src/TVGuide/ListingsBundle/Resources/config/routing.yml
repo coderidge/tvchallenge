@@ -1,0 +1,7 @@
+tv_guide_listings_homepage:
+    path:     /listings
+    defaults: { _controller: TVGuideListingsBundle:Default:index }
+    
+tv_guide_listings_package:
+    path:     /package
+    defaults: { _controller: TVGuideListingsBundle:Default:package }

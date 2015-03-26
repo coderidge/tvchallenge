@@ -1,0 +1,4 @@
+tv_guide_listings:
+    resource: "@TVGuideListingsBundle/Resources/config/routing.yml"
+    prefix:   /
+

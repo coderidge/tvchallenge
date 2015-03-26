@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /home/gav/public_html/TVGuide/app/config/routing_dev.yml

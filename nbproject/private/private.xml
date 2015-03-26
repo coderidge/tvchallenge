@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Entity/Channels.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Entity/RegionChannelName.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Controller/DefaultController.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Entity/RegionRepository.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Entity/Region.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/Resources/config/routing.yml</file>
+            <file>file:/home/gav/public_html/TVGuide/app/config/routing.yml</file>
+            <file>file:/home/gav/public_html/TVGuide/app/config/parameters.yml</file>
+            <file>file:/home/gav/public_html/TVGuide/src/Acme/DemoBundle/Controller/DemoController.php</file>
+            <file>file:/home/gav/public_html/TVGuide/src/TVGuide/ListingsBundle/TVGuideListingsBundle.php</file>
+        </group>
+    </open-files>
+</project-private>

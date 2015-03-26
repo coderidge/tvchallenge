@@ -1,0 +1,52 @@
+<html>
+<head>
+      {% block stylesheets %}
+      <link rel="stylesheet" href="{{asset('bundles/tvguidelistings/css/bootstrap.css')}}" type="text/css" media="all">
+      {% endblock %}
+      </head>
+ <body>
+    
+  <div class="container">
+  
+   <div class="text-center">
+      <h1>TV Guide</h1>
+      <h2>Select A TV Package</h2>
+      <form>
+      <select name="package" onchange="showChannel(this.value)">
+      <option value="">Select:</option>
+      <option value="1">Small</option>
+      <option value="2">Medium</option>
+      <option value="3">Large</option>
+       </select>
+      </form>
+       <div id="available"></div>
+      </div>
+
+    </div><!-- /.container -->
+    </body>
+        <script>
+            
+            <!-- should in bundle but would not work pushed for time -->
+          function showChannel(str) {
+    if (str == "") {
+        document.getElementById("available").innerHTML = "";
+        return;
+    } else {
+        if (window.XMLHttpRequest) {
+           
+            xmlhttp = new XMLHttpRequest();
+        } else {
+        
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("available").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","{{path('tv_guide_listings_package')}}?package="+str,true);
+        xmlhttp.send();
+    }
+}
+        </script>
+    </html>

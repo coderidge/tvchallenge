@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="TVGuide\ListingsBundle\Entity\RegionChannelName">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="regionId" type="integer" column="region_id"/>
+    <field name="channelId" type="integer" column="channel_id"/>
+    <field name="channelName" type="string" column="channel_name" length="255"/>
+    <many-to-one field="channels" target-entity="Channels">
+      <join-columns>
+        <join-column name="channel_id" referenced-column-name="id"/>
+      </join-columns>
+        </many-to-one>
+  </entity>
+</doctrine-mapping>
