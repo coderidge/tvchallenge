@@ -7,15 +7,8 @@ TV challenge developed with Symfony2 using the MySql database and twitter bootst
 
 3/ in composer use the command 'php app/console doctrine:schema:update --force' to create tables
 
-4/ use the sample data to populate your database 
+4/ use this sample data to populate your database 
 
---
--- Database: `listings`
---
-
---
--- Dumping data for table `Channels`
---
 
 INSERT INTO `Channels` (`id`, `channel_number`, `channel_name`, `region`, `package`) VALUES
 (1, 1, 'Films', '', '2'),
@@ -24,18 +17,12 @@ INSERT INTO `Channels` (`id`, `channel_number`, `channel_name`, `region`, `packa
 (4, 4, 'News', '', '1'),
 (5, 5, 'Sport', '', '3');
 
---
--- Dumping data for table `Packages`
---
-
 INSERT INTO `Packages` (`id`, `package_name`) VALUES
 (1, 'L'),
 (2, 'M'),
 (3, 'S');
 
---
--- Dumping data for table `Region`
---
+
 
 INSERT INTO `Region` (`id`, `region_name`) VALUES
 (1, 'North'),
@@ -43,9 +30,7 @@ INSERT INTO `Region` (`id`, `region_name`) VALUES
 (3, 'East'),
 (4, 'West');
 
---
--- Dumping data for table `RegionChannelName`
---
+
 
 INSERT INTO `RegionChannelName` (`id`, `region_id`, `channel_id`, `channel_name`) VALUES
 (1, 1, 1, 'Films'),
